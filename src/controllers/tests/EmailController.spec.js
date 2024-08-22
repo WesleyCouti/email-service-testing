@@ -23,7 +23,6 @@ describe("Email Controller", () => {
         Olá ${request.body.firstName} ${request.body.lastName}, sua assinatura foi confirmada!
         Para acessar seus recursos exclusivos você precisa basta clicar aqui.
     `
-
         const reply = {
             code: jest.fn().mockReturnThis(),
             send: jest.fn()
@@ -50,7 +49,6 @@ describe("Email Controller", () => {
                 lastName: "Coutinho"
             }
         }
-
         const reply = {
             code: jest.fn().mockReturnThis(),
             send: jest.fn()
